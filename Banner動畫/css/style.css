@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*public*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;font-family:"微软雅黑";}
+body{line-height:1;font-family:"微软雅黑";}
+section,article,aside,header,footer,nav,dialog,figure{display:block;}
+figure{margin:0;}
+hr,button,input,textarea{margin:0;padding:0;}
+button,input,select,textarea{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+a:hover, a:focus{text-decoration:underline;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* ie6 background img*/
+*html{zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+/* font */
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+
+/* generic */
+input[type=submit]{cursor:pointer;}
+button{cursor:pointer;}
+strong, b{font-weight:bold;}
+/* common */
+a{color:#333;}
+a:hover,a{text-decoration:none;}
+h1 {font-size:22px;}
+h2 {font-size:20px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+.clear{clear:both;width:100%;height:1px;overflow:hidden;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1;/* for IE6 IE7 */}
+
+
+/* fan_banner */
+.fan_banner{background:url(../img/b4_bg.png);height:586px;overflow:hidden;}
+.bannBg_all{height:584px;position:relative;}
+.bannerCont{width:1200px;margin:0 auto;position:relative;height:588px;}
+.fan_Tables,.b4_r_bg,.fan_people,.fan_name,.fan_gg_text,.fan_job,.fan_gg_logo,.fan_gb,.fan_want2,.fan_free,.fan_text{display:none;position:absolute;}
+.fan_Tables{background:url(../img/b4_r_bg.png);width:370px;height:114px;position:absolute;top:150px;right:5px;}
+.fan_gb{background:url(../img/gb.png);width:243px;height:54px;position:absolute;top:180px;right:70px;}
+.fan_people{background:url(../img/people.png);width:208px;height:334px;bottom:15px;left:680px;z-index:1;}
+.fan_name{width:705px;height:523px;top:30px;left:0px;}
+.fan_gg_text{width:105px;height:55px;position:absolute;top:280px;right:200px;}
+.fan_gg_logo{width:272px;height:70px;position:absolute;top:25px;right:0px;}
+.fan_job{position:absolute;top:260px;right:0px;}
+.fan_free{position:absolute;top:350px;right:0px;}
+.fan_want2{width:105px;height:55px;position:absolute;top:360px;right:200px;}
+.fan_text{width:328px;height:83px;position:absolute;top:450px;right:0px;}
