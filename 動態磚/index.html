@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="zh-TW">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="zh-TW">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="zh-TW">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="zh-TW">
+<!--<![endif]-->
+<head>
+	<title>WindowsPhone Sidebar</title>
+	<meta name="author" content="TWweeb" />
+	<meta name="revisit-after" content="1 days" />
+ 	<meta name="rating" content="general" /> 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+		/* Mango */
+	$(function(){ 
+		var card = $(".card");
+		$(".card").click(function(){
+			$(this).find("img").attr("zz");
+			$(this).fadeTo(1500,0);
+			$(".item").fadeOut(500,skew);
+			$(".BarContent").show();
+			$(".BarContent").fadeIn(1450);
+			$(".hideit").hide();
+			function skew(){
+			$(".BarContent").removeClass("skew");
+			$(".BarContent").fadeIn(1300);
+		}
+		var list = $(this).siblings(".card");
+		var i = 0;
+		(function cover() {
+			list.eq(i++).addClass("cover").fadeTo(90,0,cover);
+			})();
+		var title = $(this).find("img").attr("zz");
+		$("#"+title).fadeIn(1300);
+		})
+		$(".header .control").click(function(){
+		$(".BarContent").addClass("skew");
+		$(".BarContent").fadeOut(900);
+		$(".item").fadeIn(1500);
+		$(".BarContent").hide();
+		var j = 0;
+			(function cover2() {
+			card.eq(j++).removeClass("cover").fadeTo(90,1,cover2);
+			})();
+			})
+		})
+	</script>
+	<style type="text/css">
+	/** Mango **/
+	li{list-style-type:none;}
+	.navBar{width:840px;overflow: hidden;margin: 0 auto;}
+	.item{width:840px;display:block;margin: 0 auto;background:rgb(0, 204, 255);}
+	.item .card img{width:260px; height:175px;}
+	.BarContent{width:840px;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;margin: 0 auto;}
+	.skew{-webkit-transform-origin:0 0;-o-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scale(0.7) translate(-135px,0px) rotateY(90deg);-o-transform:scale(0.7) translate(-135px,0px) rotate(30deg);-moz-transform:scale(0.7) translate(-135px,0px) rotate(30deg);-ms-transform:scale(0.7) translate(-135px,0px) rotate(30deg);}
+	.control{width:840px;height:60px;margin: 5px auto;background:rgb(51, 66, 90);}
+	.button{width:840px;height:60px;cursor:pointer;}
+	.middle{margin: 0 auto;cursor:pointer;display:block;}
+	.card{float:left;display:block;width:260px;height:175px;-webkit-transition:0.09s ease-in-out;-moz-transition:0.09s ease-in-out;-o-transition:0.09s ease-in-out;cursor:pointer;margin:5px 10px 5px 10px;background:rgb(0, 204, 255);}
+	.last{margin-right:0;}
+	.long{width:473px;}
+	.card.cover{-webkit-transform-origin:0 0;-o-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scale(1.3) translate(-35px,-30px) rotateY(90deg) skew(0deg,-30deg);-o-transform:scale(1.1) translate(-35px,-30px)  skew(0deg,-30deg);-moz-transform:scale(1.1) translate(-35px,-30px)  skew(0deg,-30deg);-ms-transform:scale(1.1) translate(-35px,-30px) skew(0deg,-30deg);}
+	</style>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+</head>
+<body>
+	<div class="header">
+	<div class="control">
+    	<p></p>
+		<img class="button middle" src="images/control.png" />
+	</div>
+	</div>
+	<div class="navBar">
+		<div class="item">
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="TopFirst" /></div>
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="TopSecond" /></div>
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="TopThird" /></div>
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="TopLast" /></div>
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="BottomFirst" /></div>
+		<div class="card middle"><img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1364/StartImg.jpg" zz="BottomMedium"/></div>
+		<div class="clear"></div>
+	</div></div>
+	<div id="main">
+	<div class="BarContent skew">
+		<div id="TopFirst" class="hideit" style="display: none;">
+			<ul>
+			<li><a href="http://twweeb.org/php-detect-mobile/">99999999999999999999999999999999</a></li>
+			<li><a href="http://twweeb.org/pnn-news/">99999999999999999999999999999999</a></li>
+			</ul>
+		</div>
+		<div id="TopSecond" class="hideit" style="display: none;">
+			<form action="http://www.google.com.tw/cse" id="cse-search-box" target="_blank">
+			<input type="hidden" name="cx" value="partner-pub-3215074949429493:i26336p9j47" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" />
+			<input type="submit" id="searchsubmit" value="SEARCH" />
+			</form>
+		</div>
+		<div id="TopThird" class="hideit" style="display: none;">
+			<ul>
+			<li><a href="http://twweeb.org/php-detect-mobile/">99999999999999999999999999999999</a></li>
+			<li><a href="http://twweeb.org/pnn-news/">99999999999999999999999999999999</a></li>
+			</ul>
+		</div>
+		<div id="TopLast" class="hideit" style="display: none;">
+			<ul>
+			<li>
+            	<img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1412/StartImg.jpg"/>
+                <img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1412/StartImg.jpg"/>
+                <img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1412/StartImg.jpg"/>
+                <img src="http://images.newegg.com.tw//pic/AdvImage/1/4/11/1412/StartImg.jpg"/>
+            </li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="fixed"></div>
+	</div>
+</body>
+</html>
